@@ -9,5 +9,5 @@ typedef struct IR{
 
 
 int main(void) {
-
+int n = 5;
 }
