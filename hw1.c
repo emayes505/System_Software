@@ -1,12 +1,16 @@
 #include <stdio.h>
 
+int BP; // Base Pointer 
+int SP; // Stack Pointer
+int PC; // Program Counter
+int PAS[500]; // Program Address Space 0-9 unused then 10+ for text/instructions then 499 and down is stack
 
-typedef struct IR{
+// Instruction Register
+typedef struct IR{ 
     int Op;
     int L;
     int M;
 } IR;
-
 
 int main(int argc, char **argv) {
 
@@ -22,7 +26,6 @@ if(fp == NULL) {
     return 2;
 }
 
-int pas[500];
 int num;
 int i = 10;
 
